@@ -1,1 +1,1 @@
-Wordpress = new Meteor.Collection("wordpress-json-api");
+Wordpress = new Meteor.Collection("WordpressJsonApi");
