@@ -14,7 +14,7 @@ Package.on_use(function(api) {
   api.versionsFrom('1.3');
   api.export('Wordpress', ['server', 'client']);
   api.use('ecmascript');
-  api.use('u2622:persistent-session');
+  api.use('u2622:persistent-session@0.4.4');
   api.use(["underscore", "templating"], "client");
   api.use("http", "server");
   api.add_files("server.js", "server");
