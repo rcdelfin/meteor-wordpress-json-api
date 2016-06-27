@@ -13,7 +13,7 @@ var apiCall = function(apiUrl, callback) {
     var myError = new Meteor.Error(errorCode, errorMessage);
     callback(myError, null);
   }
-}
+};
 
 
 Meteor.methods({

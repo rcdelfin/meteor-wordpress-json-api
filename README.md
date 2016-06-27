@@ -79,7 +79,7 @@ This is like the publication except it returns the raw response (as an object). 
 
 ####Handlebar helper
 
-**wpPost** - use this helper to fetch the data from the collection wordpress, if provided with an ID should only return a single post of that ID. **{{wpPost _id}}**
+**wpPost** - use this helper to fetch the data from the collection wordpress, if provided with an ID should only return a single post of that ID. ```{{wpPost _id}}```
 
 
 ###Extra notes
