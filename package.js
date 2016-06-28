@@ -1,6 +1,6 @@
 Package.describe({
   name: 'rcdelfin:wordpress-json-api',
-  version: '0.0.3',
+  version: '0.0.4',
   // Brief, one-line summary of the package.
   summary: "Interacts with the Wordpress JSON API plugin to retrieve wordpress data. A fork from redcap3000",
   // URL to the Git repository containing the source code for this package.
@@ -14,7 +14,6 @@ Package.on_use(function(api) {
   api.versionsFrom('1.3');
   api.export('Wordpress', ['server', 'client']);
   api.use('ecmascript');
-  api.use('u2622:persistent-session@0.4.4');
   api.use(["underscore", "templating"], "client");
   api.use("http", "server");
   api.add_files("server.js", "server");
