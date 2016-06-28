@@ -1,5 +1,8 @@
 var apiCall = function(apiUrl, callback) {
   try {
+    if (Meteor.settings.public.wordpress.url) {
+      apiUrl = Meteor.settings.public.wordpress.url + apiUrl;
+    }
     var response = HTTP.get(apiUrl).data;
     callback(null, response);
   } catch (error) {

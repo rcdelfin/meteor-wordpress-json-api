@@ -52,7 +52,7 @@ templating@1.1.12_1
 templating-tools@1.0.4
 tinytest@1.0.11
 tracker@1.0.14
-u2622:persistent-session@0.1.4
+u2622:persistent-session@0.4.4
 ui@1.0.11
 underscore@1.0.9
 url@1.0.10

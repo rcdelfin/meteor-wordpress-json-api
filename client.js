@@ -1,7 +1,7 @@
 import {Session} from 'meteor/session';
 
 Meteor.startup(function () {
-  Session.set('wp-json-api-url', false);
+  Session.set('wp-json-api-url', Meteor.settings.public.wordpress.url);
 });
 
 Handlebars.registerHelper("wpPosts", function (id) {
@@ -16,8 +16,6 @@ Template.wordpress_posts.onCreated(function () {
   // optional if one choses to use included templates.
   var self = this;
   self.autorun(function () {
-    if (!Session.equals('wp-json-api-url', false)) {
-      self.subscribe("wordpress", Session.get("wp-json-api-url"));
-    }
+    self.subscribe("wordpress", Meteor.settings.public.wordpress.url);
   });
 });
